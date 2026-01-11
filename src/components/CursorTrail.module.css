@@ -1,0 +1,23 @@
+.cursorTrail {
+    position: fixed;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--primary);
+    pointer-events: none;
+    z-index: 9999;
+    box-shadow: 0 0 10px var(--primary), 0 0 20px var(--primary);
+    opacity: 0.8;
+}
+
+.cursorGlow {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid var(--primary);
+    pointer-events: none;
+    z-index: 9998;
+    opacity: 0.3;
+    transition: all 0.1s ease;
+}

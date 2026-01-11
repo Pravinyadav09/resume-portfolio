@@ -6,7 +6,7 @@ export default function Footer() {
     return (
         <footer className={styles.footer}>
             <p className={styles.footerText}>
-                © 2026 <span>Rishita Parashar</span>. Built with Next.js & Three.js
+                © 2026 <span>Rishita Parashar</span>
             </p>
         </footer>
     );
