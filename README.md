@@ -1,36 +1,157 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Rishita Parashar - AI Developer Portfolio
 
-## Getting Started
+A stunning, modern portfolio website built with **Next.js 16**, **Three.js**, and **Framer Motion**. Features a premium dark theme with glassmorphism design, 3D background animations, and smooth scroll interactions.
 
-First, run the development server:
+## ✨ Features
 
+- 🎨 **Premium Design**: Dark theme with glassmorphism effects and gradient accents
+- 🌌 **3D Background**: Interactive floating geometric shapes using Three.js and React Three Fiber
+- ⚡ **Smooth Animations**: Powered by Framer Motion for scroll reveals and micro-interactions
+- 📱 **Fully Responsive**: Optimized for all screen sizes from mobile to desktop
+- 🎯 **Interactive Elements**: Hover effects, smooth scrolling, and dynamic navigation
+- 🔷 **Modern Icons**: Lucide React icons throughout
+- 🚀 **Performance Optimized**: Built with Next.js App Router and TypeScript
+- 🎭 **Loading Screen**: Premium loading animation on initial page load
+
+## 🛠️ Tech Stack
+
+- **Framework**: Next.js 16 (App Router)
+- **Language**: TypeScript
+- **3D Graphics**: Three.js, React Three Fiber, React Three Drei
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+- **Styling**: CSS Modules (Vanilla CSS)
+- **Font**: Inter (Google Fonts)
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18+ installed
+- npm or yarn package manager
+
+### Installation
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone <your-repo-url>
+cd portfolio
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Run the development server:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-## Learn More
+### Build for Production
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run build
+npm start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📁 Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+portfolio/
+├── src/
+│   ├── app/
+│   │   ├── layout.tsx          # Root layout with metadata
+│   │   ├── page.tsx             # Main page component
+│   │   └── globals.css          # Global styles and CSS variables
+│   └── components/
+│       ├── Background3D.tsx     # 3D animated background
+│       ├── Navbar.tsx           # Responsive navigation bar
+│       ├── Loader.tsx           # Loading screen
+│       ├── Hero.tsx             # Hero section
+│       ├── About.tsx            # About section
+│       ├── Skills.tsx           # Skills showcase
+│       ├── Education.tsx        # Education timeline
+│       ├── Projects.tsx         # Featured projects
+│       ├── Contact.tsx          # Contact information
+│       ├── Footer.tsx           # Footer
+│       ├── ScrollToTop.tsx      # Scroll to top button
+│       └── *.module.css         # Component-specific styles
+├── package.json
+└── README.md
+```
 
-## Deploy on Vercel
+## 🎨 Design Features
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Glassmorphism
+- Frosted glass effect with backdrop blur
+- Semi-transparent backgrounds
+- Subtle borders and shadows
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 3D Elements
+- Anti-gravity themed floating geometric shapes
+- Interactive hover effects on 3D objects
+- Dynamic lighting and materials
+
+### Animations
+- Scroll-triggered reveal animations
+- Smooth page transitions
+- Micro-interactions on hover
+- Loading screen with progress bar
+
+### Color Palette
+- Primary: Cyan (#00ffff)
+- Secondary: Purple (#bd00ff)
+- Background: Deep Dark (#050510)
+- Card Background: Semi-transparent dark
+
+## 📱 Responsive Design
+
+- **Desktop**: Full-width layout with sidebar navigation
+- **Tablet**: Optimized grid layouts
+- **Mobile**: Hamburger menu, stacked sections, touch-friendly buttons
+
+## 🔧 Customization
+
+### Update Personal Information
+
+Edit the following files:
+- `src/components/Hero.tsx` - Name and title
+- `src/components/About.tsx` - About description
+- `src/components/Skills.tsx` - Skills data
+- `src/components/Education.tsx` - Education timeline
+- `src/components/Projects.tsx` - Project details
+- `src/components/Contact.tsx` - Contact information and social links
+
+### Modify Colors
+
+Edit CSS variables in `src/app/globals.css`:
+```css
+:root {
+  --background: #050510;
+  --foreground: #ffffff;
+  --primary: #00ffff;
+  --secondary: #bd00ff;
+  --glass: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --card-bg: rgba(10, 10, 25, 0.8);
+}
+```
+
+## 📄 License
+
+This project is open source and available under the MIT License.
+
+## 👤 Author
+
+**Rishita Parashar**
+- Email: rishitaparashar931@gmail.com
+- Phone: 9926147939
+- LinkedIn: [linkedin.com/in/rishitaparashar](https://linkedin.com/in/rishitaparashar)
+- GitHub: [github.com/rishitaparashar](https://github.com/rishitaparashar)
+
+---
+
+Built with ❤️ using Next.js & Three.js

@@ -1,0 +1,120 @@
+.section {
+    padding: 6rem 2rem;
+    position: relative;
+    z-index: 10;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.heading {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    background: linear-gradient(to right, #fff, #aaa);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contactCard {
+    background: var(--card-bg);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(10px);
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.contactItem {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background: rgba(0, 255, 255, 0.05);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.contactItem:hover {
+    background: rgba(0, 255, 255, 0.1);
+    border-color: var(--primary);
+    transform: translateX(10px);
+}
+
+.iconWrapper {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.contactText {
+    flex: 1;
+}
+
+.contactLabel {
+    font-size: 0.9rem;
+    color: #999;
+    margin-bottom: 0.3rem;
+}
+
+.contactValue {
+    font-size: 1.1rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+.socialLinks {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    padding-top: 2rem;
+    border-top: 1px solid var(--glass-border);
+}
+
+.socialButton {
+    width: 60px;
+    height: 60px;
+    background: rgba(0, 255, 255, 0.1);
+    border: 1px solid var(--primary);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.socialButton:hover {
+    background: var(--primary);
+    transform: translateY(-5px) rotate(5deg);
+    box-shadow: 0 5px 20px rgba(0, 255, 255, 0.5);
+}
+
+.socialButton:hover svg {
+    color: #000;
+}
+
+@media (max-width: 768px) {
+    .contactItem {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .socialLinks {
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,18 @@
+.footer {
+    padding: 2rem;
+    text-align: center;
+    background: rgba(5, 5, 16, 0.9);
+    border-top: 1px solid var(--glass-border);
+    position: relative;
+    z-index: 10;
+}
+
+.footerText {
+    color: #999;
+    font-size: 0.95rem;
+}
+
+.footerText span {
+    color: var(--primary);
+    font-weight: 600;
+}
